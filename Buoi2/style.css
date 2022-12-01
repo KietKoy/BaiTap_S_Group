@@ -1,0 +1,151 @@
+ * {
+    margin: 0;
+    padding: 0;
+ }
+.header {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 70px 0;
+    display: flex;
+    
+}
+.container {
+    width: 100%;
+    margin-left: 150px;
+    margin-right: 60px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    font-size: 22px;
+    align-items: center;
+}
+.logo .logo-color {
+    display: flex;
+    color: white;
+    background-color: black;
+    margin-right: 12px;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.media-icon {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+.item i{
+    margin-right: 10px;
+    font-weight: 20px;
+    color: #F26464;
+}
+.content {
+    display: block;
+}
+.sub-content {
+    display: flex;
+    justify-content: space-between;
+}
+.content-right {
+    margin-top: 20px;
+    display: block;
+    margin-right: auto;
+    padding-left:100px;
+    width: 30%;
+}
+.content-right h1 {
+    font-size: 48px;
+}
+.content-right h1 span {
+    font-size: 20px;
+    padding-bottom: 30px;
+    display: block;
+}
+.image-boy {
+    margin-left: 160px;
+}
+img {
+    width: 451px;
+    height: 500px;
+}
+.list-inf {
+    display: flex;
+    margin-top: 60px;
+}
+.list-inf .item {
+    list-style-type: none;
+    padding-right: 60px;
+}
+.list-inf .item b {
+    font-size: 50px;
+    display: block;
+    color: #F26464;
+}
+.list-inf .item span {
+    font-size: 20px;
+}
+.sub-content-1 {
+    margin-top: 50px;
+    box-sizing: border-box;
+    padding-left: 160px;
+    padding-right: 160px;
+}
+.sub-content-1 h3{
+    display: inline-block;
+    border-bottom: 3px solid #F26464;
+    margin-bottom: 30px;
+}
+.sub-content-1 p {
+    font-size: 25px;
+    word-spacing: 1px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300px;
+    font-style: normal;
+    margin-bottom: 30px;
+}
+.sub-content-1 .btn-download {
+    color: #F26464;
+    padding: 15px;
+    display: inline-block;
+    border: 2px solid #F26464;
+    border-radius: 60px;  
+    margin-left: 45%;
+}
+.sub-content-1 .btn-download span {
+    font-weight: 800;
+}
+.skill {
+    box-sizing: border-box;
+    display: flex;
+    margin-top: 30px;
+    padding-left: 160px;
+}
+.skill .sub-skill {
+    display: block;
+}
+.skill .sub-skill h3{
+    display: inline-block;
+    border-bottom: 3px solid #F26464;
+    margin-bottom: 25px;
+}
+.skill > div {
+    width: 50%;
+}
+
+.skill-item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-item li {
+    list-style: none;
+    font-size: 20px;
+    border: 1px solid #d9d9d9;
+    padding: 10px 20px;
+    margin: 0 15px 15px 0;
+    border-radius: 50px;
+}
