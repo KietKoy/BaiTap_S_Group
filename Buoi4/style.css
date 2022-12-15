@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-bar {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    position: sticky;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    /* justify-content: space-between; */
+}
+.logo {
+    display: flex;
+    flex-grow: 3;
+    align-items: center;
+    margin-left: 10px;
+}
+.logo .search i {
+    font-size: 20px;
+}
+.fa-brands {
+    color: blue;
+    font-size: 50px;
+}
+
+.nav-list {
+    display: flex;
+    flex-grow: 8;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-list i {
+    font-size: 25px;
+}
+
+.circle {
+    display: flex;
+    width: 50px;
+    height:50px;
+    border-radius: 25px;
+    background-color: #E4E6EB;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+.circle:hover {
+    cursor: pointer;
+}
+i:hover {
+    cursor: pointer;
+}
+.icon-right {
+    display: flex;
+    flex-grow: 2;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10px;
+}
+.icon-right img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-left: 5px;
+}
+.icon-right i {
+    font-size: 20px;
+}
+.fa-facebook-messenger {
+    font-size: 20px;
+    color: black
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    position: relative;
+}
+/* .content {
+    background-color: orange;
+} */
+.content .cover-image {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.avt-name {
+    display: flex;
+}
+.avt {
+    position: relative;
+    width: 240px;
+    height: 240px;
+    top: -30px;
+    left: 40px;
+}
+.avt-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 125px;
+    border: 5px solid white;
+    position: absolute;
+}
+.active {
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    border: 3px solid white;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 30px;
+    right: 15px;
+    z-index: 1;
+}
+.btn {
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    right: 40px;
+}
+button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 15px;
+}
+button:hover {
+    cursor: pointer;
+}
+.friends button:before {
+    content: '\f4fc';
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    margin-right: 8px;
+}
+.inbox button {
+    margin-left: 10px;
+    background-color: #1B74E4;
+    color: white;
+}
+.inbox button:before {
+    content: '\f39f';
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    margin-right: 8px;
+}
+.name {
+    margin-top: 40px;
+    margin-left: 60px;
+}
+.name h1 {
+    font-size: 40px;
+}
+.name h3 {
+    margin-top: 5px;
+    color: #a3a7ae;
+    font-weight: lighter;
+}
+.list-iconchat {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    bottom: 50px;
+}
+.icon-chat {
+    position: relative;
+}
+.icon-chat img {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+.icon-chat:hover {
+    cursor: pointer;
+}
+.edit, .vv {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left: 0px;
+}
+.vv {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-left: 7px;
+}
+
+.icon-chat:hover::before {
+    content: 'Thuý Vân \00000A \00000A \00000A OKE';
+    white-space: pre;
+    display: block;
+    text-align: center;
+    width: 146px;
+    height: 81px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    position: absolute;
+    bottom: 2px;
+    right: 78px;
+}
+.icon-chat:hover::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 18px solid white;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    bottom: 32px;
+    right: 62px;
+}
+.icon-chat:hover .del {
+    display: block;
+}
+.icon-chat .del {
+    width: 20px;
+    height:20px;
+    border-radius: 25px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+.icon-chat .del i {
+    font-size: 10px;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+
+
