@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.box1 {
+    cursor: pointer;
+    position: relative;
+    width: 480px;
+    height: 360px;
+    background-image: url(./assets/img/12.jpg);
+}
+.box1-content {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    top: 10%
+}
+.box1-content .box {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    border: solid 5px white;
+    top: -5%;
+    transition: transform;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+.box1-content p {
+    position: absolute;
+    left: 5%;
+    font-size: 32px;
+}
+.box1-content .para-1 {
+    position: absolute;
+    font-size: 16px;
+    font-weight: lighter;
+    bottom: 65%;
+    opacity: 0;
+    transition: opacity, bottom;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+.box1:hover .box {
+    transform: translateY(100%);
+}
+.box1:hover .para-1 {
+    opacity: 1;
+    bottom: 20%;
+}
+.box1:hover .above-background-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background: linear-gradient(to bottom, rgba(37,141,200,1) 0%,rgba(104,60,19,1) 100%);;
+}
+.box2 {
+    position: relative;
+    width: 480px;
+    height: 360px;
+    background-image: url(./assets/img/13.jpg);
+    transition: transform;
+    transition-timing-function: linear;
+}
+.box2-content {
+    position: relative;
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    top: 10%;
+}
+.box2-content p {
+    color: white;
+    font-size: 32px;
+}
+.box2-content .para {
+    position: absolute;
+    font-size: 15px;
+    font-weight: lighter;
+    width: 80%;
+    left: 125%;
+    transition-property: left, opacity;
+    transition-duration: 400ms;
+    transition-timing-function: ease-out;
+    opacity: 0;
+}
+.above-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    opacity: 0.1;
+}
+.box2:hover .above-background {
+    cursor: pointer;
+    opacity: 0.4;
+}
+.box2:hover .line {
+    width: 100%;
+}
+.box2:hover .para {
+    left: 0;
+    opacity: 1;
+}
+.line {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 4px;
+    width: 0%;
+    background-color: white;
+    top: 23%;
+    transition-property: width;
+    transition-duration: 400ms;
+    transition-timing-function: ease-out;
+}
