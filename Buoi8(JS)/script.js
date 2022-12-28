@@ -18,8 +18,9 @@ function Fizz_Buzz(number) {
 }
 function largestEven(arr) { 
     let result = -1;
-    for(let i = 0; i < arr.length; i++) {
-        if(arr[i] % 2 == 0 && arr[i] > result) result = arr[i];
+    for(let i = 0; i <= arr.length; i++) {
+        if(arr[i] > result && arr[i] % 2 == 0 ) result = arr[i];
+        console.log(i, result);
      }
      return result;
 }
@@ -33,6 +34,9 @@ btn_1.onclick = function() {
     let input = document.getElementById("input_1").value;
     let ouput = document.getElementById("output_1");
     let arr = input.split(" ");
+    arr = arr.map(function(arr) {
+        return parseInt(arr, 10);
+    })
     ouput.value = largestEven(arr);
 }
 btn_2.onclick = function() { 
